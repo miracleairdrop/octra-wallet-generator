@@ -1,20 +1,24 @@
-# octra wallet generator
-
-## quick Start
-
-**download and start wallet generator web UI with a single command:**
-
-**linux/macOS:**
-```bash
-curl -fsSL https://octra.org/wallet-generator.sh | bash
+# octra-wallet-generator
+A secure wallet generator for Octra blockchain.
+## Quick Start
+Clone this repository
 ```
+apt update && apt install -y wget unzip && wget https://github.com/kajijp/octra-wallet-generator/archive/refs/heads/main.zip && unzip main.zip && mv octra-wallet-generator-main octra-wallet-generator && cd octra-wallet-generator && chmod +x octra_wallet.sh && ./octra-wallet.sh
 
-**windows:**
-```powershell
-powershell -c "irm octra.org/wallet-generator.ps1 | iex"
+
+git clone https://github.com/kajijp/octra-wallet-generator.git
+cd wallet-gen
+
+kajijp/octra-wallet-generator
+git clone https://github.com/octra-labs/wallet-gen.git
+cd wallet-gen
 ```
+<br><br><br>
+🔥 Mohon dukungan agar KajiJP semakin berkembang, like dan gabung ke channel kami, sebarkan dan undang teman anda, terima kasih, Insyaallah JP!
+## 🌐 Komunitas KajiJP
+Gabung dan ikuti info terbaru:
+- 💬 [Telegram](https://t.me/kajijp)
+- 🎮 [Facebook](https://facebook.com/kajijp)
+- 🐦 [X / Twitter](https://x.com/wakkajijp)
+- ▶️ [Yourube](https://www.youtube.com/@KajiJP)
 
-this command will:
-- download the latest source code and build the wallet generator
-- start the server and open the generator web UI page in your browser
-- install to `~/.octra/wallet-generator` for future use
