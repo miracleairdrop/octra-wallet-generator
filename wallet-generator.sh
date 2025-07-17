@@ -43,23 +43,18 @@ echo ""
 echo "=== octra wallet generator installer ==="
 echo ""
 
-
-
 install_bun() {
-    if ! command -v bun &> /dev/null; then
-        curl -fsSL https://bun.sh/install -o /tmp/bun_install.sh
-        if ! echo "$BUN_INSTALL_CHECKSUM  /tmp/bun_install.sh" | shasum -a 256 -c -q; then
-            echo "Failed to install bun! Please install it manually from https://bun.sh"
-            rm -f /tmp/bun_install.sh
-            exit 1
-        fi
-        bash /tmp/bun_install.sh
-        rm -f /tmp/bun_install.sh
-        # Set PATH to include Bun's binary directory
+    echo "Installing Bun..."
+    if command -v bun &> /dev/null; then
+        echo "Bun is already installed. Version: $(bun --version)"
+    else
+        echo "Installing Bun..."
+        curl -fsSL https://bun.sh/install | bash
+        # Set PATH to include Bun’s binary directory
         export PATH="$HOME/.bun/bin:$PATH"
+        echo "Bun installed successfully!"
     fi
 }
-
 get_latest_release() {
     curl -s "https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/tags" | \
     grep '"name":' | \
