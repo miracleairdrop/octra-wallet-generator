@@ -32,5 +32,5 @@ Gabung dan ikuti info terbaru:
 - 💬 [Telegram](https://t.me/kajijp)
 - 🎮 [Facebook](https://facebook.com/kajijp)
 - 🐦 [X / Twitter](https://x.com/wakkajijp)
-- ▶️ [Yourube](https://www.youtube.com/@KajiJP)
+- ▶️ [Youtube](https://youtu.be/aV0tCg9zqrw)
 
