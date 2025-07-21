@@ -25,6 +25,43 @@ Navigate to http://<vps_ip_address>:8888
 - Derive addresses for different network types
 - Auto-save wallet file to disk
 
+## Get Faucet
+Visit [Faucet page](https://faucet.octra.network/)
+Enter your address starting with **oct**... to get faucet
+![1](assets/faucet-octra.png)
+
+## Configure Octra CLI and Wallet
+### 1. Install Python
+```
+sudo apt install python3 python3-pip python3-venv python3-dev -y
+```
+### 2. Install Octra Client CLI
+```
+git clone https://github.com/octra-labs/octra_pre_client.git
+cd octra_pre_client
+
+python3 -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+
+cp wallet.json.example wallet.json
+```
+### 3. Add wallet to CLI
+```
+nano wallet.json
+```
+#### **Replace following values:**  
+- private-key-here: Privatekey with B64 format  
+- octxxxxxxxx...: Octra address starting with oct...  
+
+### 4. Run Octra Client CLI
+```
+python3 -m venv venv
+source venv/bin/activate
+python3 cli.py
+```
+- This should open a Testnet UI
+
 <br><br>
 🔥 Mohon dukungan agar KajiJP semakin berkembang, like dan gabung ke channel kami, sebarkan dan undang teman anda, terima kasih, Insyaallah JP!
 ## 🌐 Komunitas KajiJP
