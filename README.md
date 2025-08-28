@@ -3,7 +3,7 @@ A secure wallet generator for Octra blockchain.
 ## Quick Start
 ### 1. Clone this repository
 ```bash
-git clone https://github.com/kajijp/octra-wallet-generator.git
+git clone https://github.com/miracleairdrop/octra-wallet-generator.git
 cd octra-wallet-generator
 chmod +x wallet-generator.sh
 ```
