@@ -62,12 +62,13 @@ python3 cli.py
 ```
 - This should open a Testnet UI
 
-<br><br>
-🔥 Mohon dukungan agar KajiJP semakin berkembang, like dan gabung ke channel kami, sebarkan dan undang teman anda, terima kasih, Insyaallah JP!
-## 🌐 Komunitas KajiJP
+<br><br><br>
+🔥 Mohon dukungan agar Miracle Airdrop semakin berkembang, like dan gabung ke channel kami, sebarkan dan undang teman anda, Terima kasih !
+## 🌐 Komunitas Miracle Airdrop
 Gabung dan ikuti info terbaru:
-- 💬 [Telegram](https://t.me/kajijp)
-- 🎮 [Facebook](https://facebook.com/kajijp)
-- 🐦 [X / Twitter](https://x.com/kajijepe)
-- ▶️ [Youtube](https://youtu.be/aV0tCg9zqrw)
+- 💬 [Telegram](https://t.me/miracleairdrops)
+- 🎮 [Facebook](https://facebook.com/miracleairdrop)
+- 🐦 [X / Twitter](https://x.com/miracle_forum)
+- ▶️ [Youtube](https://www.youtube.com/@miracle_airdrop)
+- 🐙 [Github](https://github.com/miracleairdrop)
 
